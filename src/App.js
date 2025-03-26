@@ -1,7 +1,5 @@
-// App.js
-
 import React, { useState } from 'react';
-import './styles.css';
+import './styles.css'; // Ensure file name matches
 
 function App() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -17,7 +15,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('home')}>Home</button>
+            <button className="navlinks" onClick={() => navigateTo('home')} aria-label="Navigate to Home">Home</button>
             </li>
             <li>
               <button className="navlinks" onClick={() => navigateTo('about')}>About</button>
