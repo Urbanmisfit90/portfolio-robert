@@ -63,21 +63,30 @@
   box-shadow: 10px 10px 15px #555;
 }
 
-/* CSS to control the size of the images in the Frontend section */
+/* CSS for the Frontend skill logos to match the screenshot */
 .frontend-logo {
-  border: 1px solid #ccc;       /* Example: Different border */
-  border-radius: 10px;          /* Example: Rounded corners */
-  box-shadow: 3px 3px 5px #ddd;   /* Example: Different shadow */
-  width: 80px;                 /* Adjust to your desired width for logos */
-  height: 80px;                /* Adjust to your desired height for logos */
-  object-fit: contain;         /* Example: Fit image within bounds */
-  margin-right: 5px;           /* Add some spacing between logos */
-  vertical-align: middle;      /* Align vertically with text if any */
+  width: 105px;          /* Adjust to your desired logo width */
+  height: auto;         /* Maintain aspect ratio */
+  margin-right: 15px;    /* Add spacing between logos */
+  vertical-align: middle; /* Align with text if any */
+  border: none;          /* Remove any border */
+  border-radius: 0;      /* Remove any border-radius */
+  box-shadow: none;      /* Remove any shadow */
+  object-fit: contain;   /* Ensure the whole logo is visible */
 }
 
-/* You can remove or comment out this more specific rule if you are now using .frontend-logo */
-/* ul.frontend-skills li img {
-  width: 39.99px;
-  height: 39.99px;
-  vertical-align: middle;
-} */
+/* Style the list to display logos horizontally */
+#home h3 + ul { /* Target the ul immediately following the Frontend h3 */
+  display: flex;
+  flex-wrap: wrap;      /* Allow logos to wrap to the next line if needed */
+  align-items: center;  /* Vertically align logos in the row */
+  margin-top: 10px;     /* Add some top margin to the list */
+  padding-left: 0;      /* Remove default list padding */
+  list-style-type: none; /* Remove bullet points */
+}
+
+#home h3 + ul li {
+  margin-right: 20px;   /* Add spacing between list items (logos) */
+  margin-bottom: 10px;  /* Add some bottom margin for wrapping */
+}
+
