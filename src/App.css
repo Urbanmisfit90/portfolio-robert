@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+#home, #about { /* Target the sections containing the image */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+}
+
+/* ====== Added Image Styling ====== */
+.image {
+  border: 2px solid #000;
+  border-radius: 50%;
+  box-shadow: 7px 7px 10px #789;
+  width: 180px; /* Adjust to your desired width */
+  height: 250px; /* Adjust to your desired height */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px #555;
+}

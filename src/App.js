@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css'; // Ensure file name matches
+import './App.css';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -32,50 +33,29 @@ function App() {
       <main id="main-content">
         {currentSection === 'home' && (
           <section id="home">
-            <h2>Technical Skills</h2>
-            <h3>Front End:</h3>
-            <ul>
-              <li>React.js, 
-              Redux, 
-              Hooks,
-              Context API,
-              Jest,
-              Cypress,
-              Yup,
-              Axios,
-              JavaScript,
-              HTML,
-              CSS,
-              Ant Design</li>
-            </ul>
-            <h3>Back End:</h3>
-            <ul>
-              <li>Node.js,
-              Express,
-              SQL,
-              PostgreSQL,
-              Docker,
-              Python,
-              Git CLI,
-              GitHub,
-              VS Code,
-              Vercel,
-              Heroku,
-              Netlify</li>
-            </ul>
-            <h3>Additional:</h3>
-            <ul>
-              <li>Agile Project Management,
-              Algorithms,
-              Architecture,
-              Debugging,
-              Deployment</li>
-            </ul>
-          </section>
+            <img src="13458686_10210431648931492_911658130944951959_o.png" alt="Overview of services offered" className="image"/>
+          <h2>Technical Skills</h2>
+          <h3>Front End:</h3>
+          <ul>
+            <li>React.js, Redux, Hooks, Context API, Jest, Cypress, Yup, Axios, JavaScript, HTML, CSS, Ant Design</li>
+          </ul>
+          <h3>Back End:</h3>
+          <ul>
+            <li>Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify</li>
+          </ul>
+          <h3>Additional:</h3>
+          <ul>
+            <li>Agile Project Management, Algorithms, Architecture, Debugging, Deployment</li>
+          </ul>
+          <h2 className="projects-heading">Projects</h2>
+          <div className="projects-container"></div>
+        </section>
+        
         )}
         {currentSection === 'about' && (
           <section id="about">
             <h2>About Me</h2>
+            <img src="53595298_10219476102837187_8932955788637372416_n (1).jpg" alt="Overview of services offered" className="image"/>
             <p>
               Hello! I'm Robert Dixon, a passionate software developer who embarked on an exciting journey at BloomTech.
               Throughout my time at BloomTech, I've gained valuable knowledge and skills in web development, JavaScript, React, Node.js and more.
