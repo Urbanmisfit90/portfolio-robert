@@ -58,9 +58,11 @@ function App() {
             />
             <h2>Technical Skills</h2>
             <h3>Languages</h3>
-            <li><img src="JS.png" alt="JS" className="languages-logo" /></li>
-            <li><img src="Python.jpeg" alt="Python" className="languages-logo" /></li>
-            <li><img src="TS.jpg" alt="TS" className="languages-logo" /></li>
+           <ul className="languages-list">
+           <li className="language-item"><img src="JS.png" alt="JS" className="languages-logo" /></li>
+           <li className="language-item"><img src="Python.jpeg" alt="Python" className="languages-logo" /></li>
+           <li className="language-item"><img src="TS.jpg" alt="TS" className="languages-logo" /></li>
+           </ul>
             <h3>Frontend</h3>
             <ul>
               <li><img src="Ant.png" alt="Ant Design" className="frontend-logo" /></li>

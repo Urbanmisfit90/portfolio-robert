@@ -64,15 +64,28 @@
 }
 
 /* CSS for the logos to match the screenshot */
+.languages-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px; /* Optional: Add top margin */
+}
+
+.languages-list .language-item {
+  margin-right: 20px; /* Spacing between logos */
+  margin-bottom: 10px; /* Optional: Vertical spacing for wrapping */
+}
+
 .languages-logo {
-  width: 110px;          /* Adjust to your desired logo width */
-  height: auto;         /* Maintain aspect ratio */
-  margin-right: 15px;    /* Add spacing between logos */
-  vertical-align: middle; /* Align with text if any */
-  border: none;          /* Remove any border */
-  border-radius: 0;      /* Remove any border-radius */
-  box-shadow: none;      /* Remove any shadow */
-  object-fit: contain;   /* Ensure the whole logo is visible */
+  width: 110px;       /* Adjust as needed */
+  height: auto;
+  vertical-align: middle;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
 }
 
 .frontend-logo {
