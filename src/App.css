@@ -63,24 +63,15 @@
   box-shadow: 10px 10px 15px #555;
 }
 
-/* CSS for the logos to match the screenshot */
-.languages-list {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 10px; /* Optional: Add top margin */
-}
-
-.languages-list .language-item {
-  margin-right: 20px; /* Spacing between logos */
-  margin-bottom: 10px; /* Optional: Vertical spacing for wrapping */
-}
-
-.languages-logo {
-  width: 110px;       /* Adjust as needed */
+/* CSS for the logos */
+.languages-logo,
+.frontend-logo,
+.backend-logo,
+.databases-logo,
+.additional-logo {
+  width: 90px;
   height: auto;
+  margin-right: 10px;
   vertical-align: middle;
   border: none;
   border-radius: 0;
@@ -88,40 +79,36 @@
   object-fit: contain;
 }
 
-.frontend-logo {
-  width: 110px;          /* Adjust to your desired logo width */
-  height: auto;         /* Maintain aspect ratio */
-  margin-right: 15px;    /* Add spacing between logos */
-  vertical-align: middle; /* Align with text if any */
-  border: none;          /* Remove any border */
-  border-radius: 0;      /* Remove any border-radius */
-  box-shadow: none;      /* Remove any shadow */
-  object-fit: contain;   /* Ensure the whole logo is visible */
-}
-
-.backend-logo {
-  width: 110px;          /* Adjust to your desired logo width */
-  height: auto;         /* Maintain aspect ratio */
-  margin-right: 15px;    /* Add spacing between logos */
-  vertical-align: middle; /* Align with text if any */
-  border: none;          /* Remove any border */
-  border-radius: 0;      /* Remove any border-radius */
-  box-shadow: none;      /* Remove any shadow */
-  object-fit: contain;   /* Ensure the whole logo is visible */
-}
-
-/* Style the list to display logos horizontally */
-#home h3 + ul { /* Target the ul immediately following the Frontend h3 */
+/* Style the lists to display logos horizontally */
+#home h3 + ul {
   display: flex;
-  flex-wrap: wrap;      /* Allow logos to wrap to the next line if needed */
-  align-items: center;  /* Vertically align logos in the row */
-  margin-top: 10px;     /* Add some top margin to the list */
-  padding-left: 0;      /* Remove default list padding */
-  list-style-type: none; /* Remove bullet points */
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 #home h3 + ul li {
-  margin-right: 20px;   /* Add spacing between list items (logos) */
-  margin-bottom: 10px;  /* Add some bottom margin for wrapping */
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+/* Specific styling for the 'Additional' section for two rows of seven */
+#home .additional-skills-list {
+  display: flex;
+  flex-wrap: wrap; /* Ensure wrapping is enabled */
+  align-items: flex-start;
+  margin-top: 10px;
+  padding-left: 0;
+  list-style-type: none;
+  width: calc(90px * 7 + 10px * 6); /* Total width for one row of seven */
+  margin: 10px auto 0; /* Center the container */
+}
+
+#home .additional-skills-list .additional-item {
+  width: 90px; /* Each item takes this width */
+  margin-right: 10px;
+  margin-bottom: 10px; /* Spacing between rows */
 }
 

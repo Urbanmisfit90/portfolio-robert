@@ -58,31 +58,169 @@ function App() {
             />
             <h2>Technical Skills</h2>
             <h3>Languages</h3>
-           <ul className="languages-list">
-           <li className="language-item"><img src="JS.png" alt="JS" className="languages-logo" /></li>
-           <li className="language-item"><img src="Python.jpeg" alt="Python" className="languages-logo" /></li>
-           <li className="language-item"><img src="TS.jpg" alt="TS" className="languages-logo" /></li>
-           </ul>
+            <ul className="languages-list">
+              <li className="language-item">
+                <img src="JS.png" alt="JS" className="languages-logo" />
+              </li>
+              <li className="language-item">
+                <img
+                  src="Python.jpeg"
+                  alt="Python"
+                  className="languages-logo"
+                />
+              </li>
+              <li className="language-item">
+                <img src="TS.jpg" alt="TS" className="languages-logo" />
+              </li>
+            </ul>
             <h3>Frontend</h3>
             <ul>
-              <li><img src="Ant.png" alt="Ant Design" className="frontend-logo" /></li>
-              <li><img src="context.jpg" alt="Context API Logo" className="frontend-logo" /></li>
-              <li><img src="CSS.jpeg" alt="CSS Logo" className="frontend-logo" /></li>
-              <li><img src="Hooks.png" alt="Hooks Logo" className="frontend-logo" /></li>
-              <li><img src="HTML.png" alt="HTML Logo" className="frontend-logo" /></li>
-              <li><img src="ReactJS.jpg" alt="ReactJS Logo" className="frontend-logo" /></li>
-              <li><img src="Redux.png" alt="Redux Logo" className="frontend-logo" /></li>
+              <li>
+                <img src="Ant.png" alt="Ant Design" className="frontend-logo" />
+              </li>
+              <li>
+                <img
+                  src="context.jpg"
+                  alt="Context API Logo"
+                  className="frontend-logo"
+                />
+              </li>
+              <li>
+                <img src="CSS.jpeg" alt="CSS Logo" className="frontend-logo" />
+              </li>
+              <li>
+                <img
+                  src="Hooks.png"
+                  alt="Hooks Logo"
+                  className="frontend-logo"
+                />
+              </li>
+              <li>
+                <img src="HTML.png" alt="HTML Logo" className="frontend-logo" />
+              </li>
+              <li>
+                <img
+                  src="ReactJS.jpg"
+                  alt="ReactJS Logo"
+                  className="frontend-logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="Redux.png"
+                  alt="Redux Logo"
+                  className="frontend-logo"
+                />
+              </li>
             </ul>
             <h3>Back End</h3>
             <ul>
-              <li><img src="Express.png" alt="Express" className="backend-logo" /></li>
-              <li><img src="NodeJS.png" alt="Express" className="backend-logo" /></li>
+              <li>
+                <img src="Express.png" alt="Express" className="backend-logo" />
+              </li>
+              <li>
+                <img src="NodeJS.png" alt="Express" className="backend-logo" />
+              </li>
             </ul>
-            <h3>Additional:</h3>
+            <h3>Databases</h3>
             <ul>
               <li>
-                Agile Project Management, Algorithms, Architecture, Debugging,
-                Deployment
+                <img src="NoSQL.png" alt="NOSQL" className="databases-logo" />
+              </li>
+              <li>
+                <img
+                  src="PostgreSQL.png"
+                  alt="PostgreSQL"
+                  className="databases-logo"
+                />
+              </li>
+              <li>
+                <img src="SQL.avif" alt="SQL" className="databases-logo" />
+              </li>
+            </ul>
+            <h3>Additional</h3>
+            <ul className="additional-skills-list">
+              <li className="additional-item">
+                <img src="Agile.png" alt="Agile" className="additional-logo" />
+              </li>
+              <li className="additional-item">
+                <img src="Axios.png" alt="Axios" className="additional-logo" />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="cypress.png"
+                  alt="cypress"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Debugging.jpg"
+                  alt="Debugging"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Deployment.png"
+                  alt="Deployment"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="docker.png"
+                  alt="docker"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="GitBash.png"
+                  alt="GitBash"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="GitHub.png"
+                  alt="Github"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Heroku.png"
+                  alt="Heroku"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img src="Jest.jpg" alt="Jest" className="additional-logo" />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Netlify.png"
+                  alt="Netlify"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Vercel.png"
+                  alt="Vercel"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="VSCode.png"
+                  alt="VSCode"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img src="YUP.webp" alt="YUP" className="additional-logo" />
               </li>
             </ul>
             <h2 className="projects-heading">Projects</h2>
