@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import './styles.css'; // Ensure file name matches
-import './App.css';
-
+import React, { useState } from "react";
+import "./styles.css"; // Ensure file name matches
+import "./App.css";
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('home');
+  const [currentSection, setCurrentSection] = useState("home");
 
   const navigateTo = (sectionId) => {
     setCurrentSection(sectionId);
@@ -17,24 +16,46 @@ function App() {
         <nav>
           <ul>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('home')} aria-label="Navigate to Home">Home</button>
+              <button
+                className="navlinks"
+                onClick={() => navigateTo("home")}
+                aria-label="Navigate to Home"
+              >
+                Home
+              </button>
             </li>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('about')}>About</button>
+              <button className="navlinks" onClick={() => navigateTo("about")}>
+                About
+              </button>
             </li>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('references')}>References</button>
+              <button
+                className="navlinks"
+                onClick={() => navigateTo("references")}
+              >
+                References
+              </button>
             </li>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('contact')}>Contact</button>
+              <button
+                className="navlinks"
+                onClick={() => navigateTo("contact")}
+              >
+                Contact
+              </button>
             </li>
           </ul>
         </nav>
       </header>
       <main id="main-content">
-        {currentSection === 'home' && (
+        {currentSection === "home" && (
           <section id="home">
-            <img src="13458686_10210431648931492_911658130944951959_o.png" alt="Overview of services offered" className="image"/>
+            <img
+              src="13458686_10210431648931492_911658130944951959_o.png"
+              alt="Overview of services offered"
+              className="image"
+            />
             <h2>Technical Skills</h2>
             <h3>Languages</h3>
             <ul className="languages-list">
@@ -103,20 +124,117 @@ function App() {
             </ul>
             <h3>Databases</h3>
             <ul>
-              <li>??</li>
+              <li>
+                <img src="NoSQL.png" alt="NOSQL" className="databases-logo" />
+              </li>
+              <li>
+                <img
+                  src="PostgreSQL.png"
+                  alt="PostgreSQL"
+                  className="databases-logo"
+                />
+              </li>
+              <li>
+                <img src="SQL.avif" alt="SQL" className="databases-logo" />
+              </li>
             </ul>
             <h3>Additional</h3>
             <ul>
-              <li>??</li>
+              <li className="additional-item">
+                <img src="Agile.png" alt="Agile" className="additional-logo" />
+              </li>
+              <li className="additional-item">
+                <img src="Axios.png" alt="Axios" className="additional-logo" />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="cypress.png"
+                  alt="cypress"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Debugging.jpg"
+                  alt="Debugging"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Deployment.png"
+                  alt="Deployment"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="docker.png"
+                  alt="docker"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="GitBash.png"
+                  alt="GitBash"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="GitHub.png"
+                  alt="Github"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Heroku.png"
+                  alt="Heroku"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img src="Jest.jpg" alt="Jest" className="additional-logo" />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Netlify.png"
+                  alt="Netlify"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="Vercel.png"
+                  alt="Vercel"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img
+                  src="VSCode.png"
+                  alt="VSCode"
+                  className="additional-logo"
+                />
+              </li>
+              <li className="additional-item">
+                <img src="YUP.webp" alt="YUP" className="additional-logo" />
+              </li>
             </ul>
             <h2 className="projects-heading">Projects</h2>
             <div className="projects-container"></div>
           </section>
         )}
-        {currentSection === 'about' && (
+        {currentSection === "about" && (
           <section id="about">
             <h2>About Me</h2>
-            <img src="53595298_10219476102837187_8932955788637372416_n (1).jpg" alt="Robert Dixon" className="image"/>
+            <img
+              src="53595298_10219476102837187_8932955788637372416_n (1).jpg"
+              alt="Robert Dixon"
+              className="image"
+            />
             <p>
               Hello! I'm Robert Dixon, a passionate software developer who
               embarked on an exciting journey at BloomTech. Throughout my time
@@ -126,7 +244,7 @@ function App() {
             </p>
           </section>
         )}
-{currentSection === "contact" && (
+        {currentSection === "contact" && (
           <section
             id="contact"
             style={{
