@@ -57,6 +57,10 @@ function App() {
               className="image"
             />
             <h2>Technical Skills</h2>
+            <h3>Languages</h3>
+            <li><img src="JS.png" alt="JS" className="languages-logo" /></li>
+            <li><img src="Python.jpeg" alt="Python" className="languages-logo" /></li>
+            <li><img src="TS.jpg" alt="TS" className="languages-logo" /></li>
             <h3>Frontend</h3>
             <ul>
               <li><img src="Ant.png" alt="Ant Design" className="frontend-logo" /></li>
@@ -67,12 +71,10 @@ function App() {
               <li><img src="ReactJS.jpg" alt="ReactJS Logo" className="frontend-logo" /></li>
               <li><img src="Redux.png" alt="Redux Logo" className="frontend-logo" /></li>
             </ul>
-            <h3>Back End:</h3>
+            <h3>Back End</h3>
             <ul>
-              <li>
-                Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI,
-                GitHub, VS Code, Vercel, Heroku, Netlify
-              </li>
+              <li><img src="Express.png" alt="Express" className="backend-logo" /></li>
+              <li><img src="NodeJS.png" alt="Express" className="backend-logo" /></li>
             </ul>
             <h3>Additional:</h3>
             <ul>

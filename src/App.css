@@ -63,9 +63,31 @@
   box-shadow: 10px 10px 15px #555;
 }
 
-/* CSS for the Frontend skill logos to match the screenshot */
+/* CSS for the logos to match the screenshot */
+.languages-logo {
+  width: 110px;          /* Adjust to your desired logo width */
+  height: auto;         /* Maintain aspect ratio */
+  margin-right: 15px;    /* Add spacing between logos */
+  vertical-align: middle; /* Align with text if any */
+  border: none;          /* Remove any border */
+  border-radius: 0;      /* Remove any border-radius */
+  box-shadow: none;      /* Remove any shadow */
+  object-fit: contain;   /* Ensure the whole logo is visible */
+}
+
 .frontend-logo {
-  width: 105px;          /* Adjust to your desired logo width */
+  width: 110px;          /* Adjust to your desired logo width */
+  height: auto;         /* Maintain aspect ratio */
+  margin-right: 15px;    /* Add spacing between logos */
+  vertical-align: middle; /* Align with text if any */
+  border: none;          /* Remove any border */
+  border-radius: 0;      /* Remove any border-radius */
+  box-shadow: none;      /* Remove any shadow */
+  object-fit: contain;   /* Ensure the whole logo is visible */
+}
+
+.backend-logo {
+  width: 110px;          /* Adjust to your desired logo width */
   height: auto;         /* Maintain aspect ratio */
   margin-right: 15px;    /* Add spacing between logos */
   vertical-align: middle; /* Align with text if any */
