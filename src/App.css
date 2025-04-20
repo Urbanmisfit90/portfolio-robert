@@ -1,3 +1,8 @@
+body {
+  background-color: #f0f0f0; /* Replace with your desired solid background color for the entire page */
+  min-height: 200vh; /* Ensure the body takes up at least the full viewport height */
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34; /* Keep the header background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,8 +57,8 @@
   border: 2px solid #000;
   border-radius: 50%;
   box-shadow: 7px 7px 10px #789;
-  width: 180px; /* Adjust to your desired width for main images */
-  height: 250px; /* Adjust to your desired height for main images */
+  width: 150px; /* Reduced width */
+  height: 200px; /* Reduced height */
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -102,13 +107,25 @@
   margin-top: 10px;
   padding-left: 0;
   list-style-type: none;
+  justify-content: flex-start; /* Distribute items from the start */
   width: calc(90px * 7 + 10px * 6); /* Total width for one row of seven */
   margin: 10px auto 0; /* Center the container */
 }
 
+/* Styling for each additional skill item */
 #home .additional-skills-list .additional-item {
   width: 90px; /* Each item takes this width */
   margin-right: 10px;
   margin-bottom: 10px; /* Spacing between rows */
 }
 
+footer {
+  background-color: inherit; /* Inherit the body's background */
+  color: white; /* Keep the text white */
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
