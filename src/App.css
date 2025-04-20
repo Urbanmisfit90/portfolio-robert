@@ -37,25 +37,47 @@
   }
 }
 
-#home, #about { /* Target the sections containing the image */
+#home,
+#about {
+  /* Target the sections containing the image */
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center items horizontally */
+  flex-direction: column;
+  /* Stack items vertically */
+  align-items: center;
+  /* Center items horizontally */
 }
 
-/* ====== Added Image Styling ====== */
+/* ====== Added Image Styling (for main images) ====== */
 .image {
   border: 2px solid #000;
   border-radius: 50%;
   box-shadow: 7px 7px 10px #789;
-  width: 180px; /* Adjust to your desired width */
-  height: 250px; /* Adjust to your desired height */
+  width: 180px; /* Adjust to your desired width for main images */
+  height: 250px; /* Adjust to your desired height for main images */
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .image:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 15px #555;
 }
+
+/* CSS to control the size of the images in the Frontend section */
+.frontend-logo {
+  border: 1px solid #ccc;       /* Example: Different border */
+  border-radius: 10px;          /* Example: Rounded corners */
+  box-shadow: 3px 3px 5px #ddd;   /* Example: Different shadow */
+  width: 80px;                 /* Adjust to your desired width for logos */
+  height: 80px;                /* Adjust to your desired height for logos */
+  object-fit: contain;         /* Example: Fit image within bounds */
+  margin-right: 5px;           /* Add some spacing between logos */
+  vertical-align: middle;      /* Align vertically with text if any */
+}
+
+/* You can remove or comment out this more specific rule if you are now using .frontend-logo */
+/* ul.frontend-skills li img {
+  width: 39.99px;
+  height: 39.99px;
+  vertical-align: middle;
+} */

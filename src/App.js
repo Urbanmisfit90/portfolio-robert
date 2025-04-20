@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import './styles.css'; // Ensure file name matches
-import './App.css';
+import React, { useState } from "react";
+import "./styles.css"; // Ensure file name matches
+import "./App.css";
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('home');
+  const [currentSection, setCurrentSection] = useState("home");
 
   const navigateTo = (sectionId) => {
     setCurrentSection(sectionId);
@@ -16,61 +16,115 @@ function App() {
         <nav>
           <ul>
             <li>
-            <button className="navlinks" onClick={() => navigateTo('home')} aria-label="Navigate to Home">Home</button>
+              <button
+                className="navlinks"
+                onClick={() => navigateTo("home")}
+                aria-label="Navigate to Home"
+              >
+                Home
+              </button>
             </li>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('about')}>About</button>
+              <button className="navlinks" onClick={() => navigateTo("about")}>
+                About
+              </button>
             </li>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('references')}>References</button>
+              <button
+                className="navlinks"
+                onClick={() => navigateTo("references")}
+              >
+                References
+              </button>
             </li>
             <li>
-              <button className="navlinks" onClick={() => navigateTo('contact')}>Contact</button>
+              <button
+                className="navlinks"
+                onClick={() => navigateTo("contact")}
+              >
+                Contact
+              </button>
             </li>
           </ul>
         </nav>
       </header>
       <main id="main-content">
-        {currentSection === 'home' && (
+        {currentSection === "home" && (
           <section id="home">
-            <img src="13458686_10210431648931492_911658130944951959_o.png" alt="Overview of services offered" className="image"/>
-          <h2>Technical Skills</h2>
-          <h3>Front End:</h3>
-          <ul>
-            <li>React.js, Redux, Hooks, Context API, Jest, Cypress, Yup, Axios, JavaScript, HTML, CSS, Ant Design</li>
-          </ul>
-          <h3>Back End:</h3>
-          <ul>
-            <li>Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify</li>
-          </ul>
-          <h3>Additional:</h3>
-          <ul>
-            <li>Agile Project Management, Algorithms, Architecture, Debugging, Deployment</li>
-          </ul>
-          <h2 className="projects-heading">Projects</h2>
-          <div className="projects-container"></div>
-        </section>
-        
+            <img
+              src="13458686_10210431648931492_911658130944951959_o.png"
+              alt="Overview of services offered"
+              className="image"
+            />
+            <h2>Technical Skills</h2>
+            <h3>Frontend</h3>
+            <ul>
+              <li><img src="Ant.png" alt="Ant Design" className="frontend-logo" /></li>
+              <li><img src="context.jpg" alt="Context API Logo" className="frontend-logo" /></li>
+              <li><img src="CSS.jpeg" alt="CSS Logo" className="frontend-logo" /></li>
+              <li><img src="Hooks.png" alt="Hooks Logo" className="frontend-logo" /></li>
+              <li><img src="HTML.png" alt="HTML Logo" className="frontend-logo" /></li>
+              <li><img src="ReactJS.jpg" alt="ReactJS Logo" className="frontend-logo" /></li>
+              <li><img src="Redux.png" alt="Redux Logo" className="frontend-logo" /></li>
+            </ul>
+            <h3>Back End:</h3>
+            <ul>
+              <li>
+                Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI,
+                GitHub, VS Code, Vercel, Heroku, Netlify
+              </li>
+            </ul>
+            <h3>Additional:</h3>
+            <ul>
+              <li>
+                Agile Project Management, Algorithms, Architecture, Debugging,
+                Deployment
+              </li>
+            </ul>
+            <h2 className="projects-heading">Projects</h2>
+            <div className="projects-container"></div>
+          </section>
         )}
-        {currentSection === 'about' && (
+        {currentSection === "about" && (
           <section id="about">
             <h2>About Me</h2>
-            <img src="53595298_10219476102837187_8932955788637372416_n (1).jpg" alt="Overview of services offered" className="image"/>
+            <img
+              src="53595298_10219476102837187_8932955788637372416_n (1).jpg"
+              alt="Overview of services offered"
+              className="image"
+            />
             <p>
-              Hello! I'm Robert Dixon, a passionate software developer who embarked on an exciting journey at BloomTech.
-              Throughout my time at BloomTech, I've gained valuable knowledge and skills in web development, JavaScript, React, Node.js and more.
-              This portfolio is a showcase of my journey and the projects I've worked on.
+              Hello! I'm Robert Dixon, a passionate software developer who
+              embarked on an exciting journey at BloomTech. Throughout my time
+              at BloomTech, I've gained valuable knowledge and skills in web
+              development, JavaScript, React, Node.js and more. This portfolio
+              is a showcase of my journey and the projects I've worked on.
             </p>
           </section>
         )}
-        {currentSection === 'contact' && (
-          <section id="contact" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <div style={{ textAlign: 'center' }}>
+        {currentSection === "contact" && (
+          <section
+            id="contact"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
               <h2>Contact Me</h2>
               <p>Email: robmsc24@gmail.com</p>
               <p>Phone: (757) - 560 - 5208</p>
-              <p>GitHub: <a href="https://github.com/Urbanmisfit90">Robert A Dixon</a></p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/robertaldixon/">Robert Dixon</a></p>
+              <p>
+                GitHub:{" "}
+                <a href="https://github.com/Urbanmisfit90">Robert A Dixon</a>
+              </p>
+              <p>
+                LinkedIn:{" "}
+                <a href="https://www.linkedin.com/in/robertaldixon/">
+                  Robert Dixon
+                </a>
+              </p>
               <p>Location: Chesapeake, VA 23320</p>
             </div>
           </section>
@@ -85,5 +139,3 @@ function App() {
 }
 
 export default App;
-
-
