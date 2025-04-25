@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import "./App.css";
-import { Box } from "@mui/material"; // Import Box
+import { Box } from "@mui/material";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -13,8 +13,8 @@ function App() {
   const LogoContainer = ({ src, alt }) => (
     <Box
       sx={{
-        width: 90, // Consistent width (match your CSS)
-        height: 90, // Consistent height (adjust as needed)
+        width: 90,
+        height: 90,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -76,108 +76,64 @@ function App() {
               className="image"
             />
             <h2>Technical Skills</h2>
-            <h3>Languages</h3>
-            <ul className="languages-list">
-              <li className="language-item">
-                <LogoContainer src="JS.png" alt="JS" />
-              </li>
-              <li className="language-item">
-                <LogoContainer src="Python.jpeg" alt="Python" />
-              </li>
-              <li className="language-item">
-                <LogoContainer src="TS.jpg" alt="TS" />
-              </li>
-            </ul>
-            <h3>Frontend</h3>
-            <ul>
-              <li>
-                <LogoContainer src="Ant.png" alt="Ant Design" />
-              </li>
-              <li>
-                <LogoContainer src="context.jpg" alt="Context API Logo" />
-              </li>
-              <li>
-                <LogoContainer src="CSS.jpeg" alt="CSS Logo" />
-              </li>
-              <li>
-                <LogoContainer src="Hooks.png" alt="Hooks Logo" />
-              </li>
-              <li>
-                <LogoContainer src="HTML.png" alt="HTML Logo" />
-              </li>
-              <li>
-                <LogoContainer src="ReactJS.jpg" alt="ReactJS Logo" />
-              </li>
-              <li>
-                <LogoContainer src="Redux.png" alt="Redux Logo" />
-              </li>
-            </ul>
-            <h3>Backend</h3>
-            <ul>
-              <li>
-                <LogoContainer src="Express.png" alt="Express" />
-              </li>
-              <li>
-                <LogoContainer src="NodeJS.png" alt="Express" />
-              </li>
-            </ul>
-            <h3>Databases</h3>
-            <ul>
-              <li>
-                <LogoContainer src="NoSQL.png" alt="NOSQL" />
-              </li>
-              <li>
-                <LogoContainer src="PostgreSQL.png" alt="PostgreSQL" />
-              </li>
-              <li>
-                <LogoContainer src="SQL.avif" alt="SQL" />
-              </li>
-            </ul>
-            <h3>Additional</h3>
-            <ul className="additional-skills-list">
-              <li className="additional-item">
-                <LogoContainer src="Agile.png" alt="Agile" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Axios.png" alt="Axios" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="cypress.png" alt="cypress" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Debugging.jpg" alt="Debugging" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Deployment.png" alt="Deployment" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="docker.png" alt="docker" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="GitBash.png" alt="GitBash" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="GitHub.png" alt="Github" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Heroku.png" alt="Heroku" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Jest.jpg" alt="Jest" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Netlify.png" alt="Netlify" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="Vercel.png" alt="Vercel" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="VSCode.png" alt="VSCode" />
-              </li>
-              <li className="additional-item">
-                <LogoContainer src="YUP.webp" alt="YUP" />
-              </li>
-            </ul>
+
+            <div className="skills-container">
+              {/* Languages */}
+              <div className="skill-column">
+                <h3>Languages</h3>
+                <img src="JS.png" alt="JavaScript" />
+                <img src="TS.jpg" alt="TypeScript" />
+                <img src="Python.jpeg" alt="Python" />
+              </div>
+
+              {/* Frontend */}
+              <div className="skill-column">
+                <h3>Frontend</h3>
+                <img src="Ant.png" alt="Ant Design" />
+                <img src="context.jpg" alt="Context API" />
+                <img src="CSS.jpeg" alt="CSS" />
+                <img src="Hooks.png" alt="Hooks" />
+                <img src="HTML.png" alt="HTML" />
+                <img src="ReactJS.jpg" alt="ReactJS" />
+                <img src="Redux.png" alt="Redux Logo" />
+              </div>
+
+
+              {/* Backend */}
+              <div className="skill-column">
+                <h3>Backend</h3>
+                <img src="Express.png" alt="Express"/>
+                <img src="NodeJS.png" alt="Express" />
+              </div>
+
+              {/* Databases */}
+              <div className="skill-column">
+                <h3>Databases</h3>
+                <img src="NoSQL.png" alt="NOSQL" />
+                <img src="PostgreSQL.png" alt="PostgreSQL" />
+                <img src="SQL.avif" alt="SQL" />
+              </div>
+
+              {/* Additional */}
+              <div className="skill-column">
+                <h3>Additional</h3>
+                <img src="Agile.png" alt="Agile" />
+                <img src="Axios.png" alt="Axios" />
+                <img src="cypress.png" alt="cypress" />
+                <img src="Debugging.jpg" alt="Debugging" />
+                <img src="Deployment.png" alt="Deployment" />
+                <img src="docker.png" alt="docker" />
+                <img src="GitBash.png" alt="GitBash" />
+                <img src="GitHub.png" alt="Github" />
+                <img src="Heroku.png" alt="Heroku" />
+                <img src="Jest.jpg" alt="Jest" />
+                <img src="Netlify.png" alt="Netlify" />
+                <img src="Vercel.png" alt="Vercel" />
+                <img src="VSCode.png" alt="VSCode" />
+                <img src="YUP.webp" alt="YUP" />
+              </div>
+            </div>
+
             <h2 className="projects-heading">Projects</h2>
             <div className="projects-container"></div>
           </section>
@@ -236,4 +192,3 @@ function App() {
 }
 
 export default App;
-

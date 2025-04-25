@@ -1,64 +1,27 @@
 body {
-  background-color: #f0f0f0; /* Replace with your desired solid background color for the entire page */
-  min-height: 200vh; /* Ensure the body takes up at least the full viewport height */
+  background-color: #f0f0f0;
+  min-height: 200vh;
 }
 
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34; /* Keep the header background */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* ... (other styles like App-logo, App-header, App-link, @keyframes remain unchanged) */
 
 #home,
 #about {
-  /* Target the sections containing the image */
   display: flex;
   flex-direction: column;
-  /* Stack items vertically */
   align-items: center;
-  /* Center items horizontally */
 }
 
-/* ====== Added Image Styling (for main images) ====== */
 .image {
   border: 2px solid #000;
   border-radius: 50%;
   box-shadow: 7px 7px 10px #789;
-  width: 150px; /* Reduced width */
-  height: 200px; /* Reduced height */
+  width: 150px;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -68,60 +31,42 @@ body {
   box-shadow: 10px 10px 15px #555;
 }
 
-/* CSS for the logos */
-.languages-logo,
-.frontend-logo,
-.backend-logo,
-.databases-logo,
-.additional-logo {
-  /* width: 90px;  // Handled by Box */
-  /* height: auto; // Handled by Box */
-  margin-right: 10px;
-  vertical-align: middle;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+/* ==================== Skills Grid Styles ==================== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  width: 90%;
+  margin: 20px auto; /* Center the grid */
+}
+
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05); /* Dark transparent background */
+  border-radius: 10px;
+}
+
+.skill-column h3 {
+  color: #00ff7f; /* Light green color for headings */
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.skill-column img {
+  width: 60px;
+  height: 60px;
+  margin: 8px 0;
   object-fit: contain;
 }
 
-/* Style the lists to display logos horizontally */
-#home h3 + ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 10px;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-#home h3 + ul li {
-  margin-right: 15px;
-  margin-bottom: 10px;
-}
-
-/* Specific styling for the 'Additional' section for two rows of seven */
-#home .additional-skills-list {
-  display: flex;
-  flex-wrap: wrap; /* Ensure wrapping is enabled */
-  align-items: flex-start;
-  margin-top: 10px;
-  padding-left: 0;
-  list-style-type: none;
-  justify-content: flex-start; /* Distribute items from the start */
-  width: calc(90px * 7 + 10px * 6); /* Total width for one row of seven */
-  margin: 10px auto 0; /* Center the container */
-}
-
-/* Styling for each additional skill item */
-#home .additional-skills-list .additional-item {
-  width: 90px; /* Each item takes this width */
-  margin-right: 10px;
-  margin-bottom: 10px; /* Spacing between rows */
-}
+/* ==================== End Skills Grid Styles ==================== */
 
 footer {
-  background-color: inherit; /* Inherit the body's background */
-  color: white; /* Keep the text white */
+  background-color: inherit;
+  color: white;
   padding: 10px 0;
   text-align: center;
 }
