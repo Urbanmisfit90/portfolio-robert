@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./styles.css"; // Ensure file name matches
+import "./styles.css";
 import "./App.css";
+import { Box } from "@mui/material"; // Import Box
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -8,6 +9,24 @@ function App() {
   const navigateTo = (sectionId) => {
     setCurrentSection(sectionId);
   };
+
+  const LogoContainer = ({ src, alt }) => (
+    <Box
+      sx={{
+        width: 90, // Consistent width (match your CSS)
+        height: 90, // Consistent height (adjust as needed)
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <img
+        src={src}
+        alt={alt}
+        style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
+      />
+    </Box>
+  );
 
   return (
     <div>
@@ -60,167 +79,103 @@ function App() {
             <h3>Languages</h3>
             <ul className="languages-list">
               <li className="language-item">
-                <img src="JS.png" alt="JS" className="languages-logo" />
+                <LogoContainer src="JS.png" alt="JS" />
               </li>
               <li className="language-item">
-                <img
-                  src="Python.jpeg"
-                  alt="Python"
-                  className="languages-logo"
-                />
+                <LogoContainer src="Python.jpeg" alt="Python" />
               </li>
               <li className="language-item">
-                <img src="TS.jpg" alt="TS" className="languages-logo" />
+                <LogoContainer src="TS.jpg" alt="TS" />
               </li>
             </ul>
             <h3>Frontend</h3>
             <ul>
               <li>
-                <img src="Ant.png" alt="Ant Design" className="frontend-logo" />
+                <LogoContainer src="Ant.png" alt="Ant Design" />
               </li>
               <li>
-                <img
-                  src="context.jpg"
-                  alt="Context API Logo"
-                  className="frontend-logo"
-                />
+                <LogoContainer src="context.jpg" alt="Context API Logo" />
               </li>
               <li>
-                <img src="CSS.jpeg" alt="CSS Logo" className="frontend-logo" />
+                <LogoContainer src="CSS.jpeg" alt="CSS Logo" />
               </li>
               <li>
-                <img
-                  src="Hooks.png"
-                  alt="Hooks Logo"
-                  className="frontend-logo"
-                />
+                <LogoContainer src="Hooks.png" alt="Hooks Logo" />
               </li>
               <li>
-                <img src="HTML.png" alt="HTML Logo" className="frontend-logo" />
+                <LogoContainer src="HTML.png" alt="HTML Logo" />
               </li>
               <li>
-                <img
-                  src="ReactJS.jpg"
-                  alt="ReactJS Logo"
-                  className="frontend-logo"
-                />
+                <LogoContainer src="ReactJS.jpg" alt="ReactJS Logo" />
               </li>
               <li>
-                <img
-                  src="Redux.png"
-                  alt="Redux Logo"
-                  className="frontend-logo"
-                />
+                <LogoContainer src="Redux.png" alt="Redux Logo" />
               </li>
             </ul>
             <h3>Backend</h3>
             <ul>
               <li>
-                <img src="Express.png" alt="Express" className="backend-logo" />
+                <LogoContainer src="Express.png" alt="Express" />
               </li>
               <li>
-                <img src="NodeJS.png" alt="Express" className="backend-logo" />
+                <LogoContainer src="NodeJS.png" alt="Express" />
               </li>
             </ul>
             <h3>Databases</h3>
             <ul>
               <li>
-                <img src="NoSQL.png" alt="NOSQL" className="databases-logo" />
+                <LogoContainer src="NoSQL.png" alt="NOSQL" />
               </li>
               <li>
-                <img
-                  src="PostgreSQL.png"
-                  alt="PostgreSQL"
-                  className="databases-logo"
-                />
+                <LogoContainer src="PostgreSQL.png" alt="PostgreSQL" />
               </li>
               <li>
-                <img src="SQL.avif" alt="SQL" className="databases-logo" />
+                <LogoContainer src="SQL.avif" alt="SQL" />
               </li>
             </ul>
             <h3>Additional</h3>
-            <ul>
+            <ul className="additional-skills-list">
               <li className="additional-item">
-                <img src="Agile.png" alt="Agile" className="additional-logo" />
+                <LogoContainer src="Agile.png" alt="Agile" />
               </li>
               <li className="additional-item">
-                <img src="Axios.png" alt="Axios" className="additional-logo" />
+                <LogoContainer src="Axios.png" alt="Axios" />
               </li>
               <li className="additional-item">
-                <img
-                  src="cypress.png"
-                  alt="cypress"
-                  className="additional-logo"
-                />
+                <LogoContainer src="cypress.png" alt="cypress" />
               </li>
               <li className="additional-item">
-                <img
-                  src="Debugging.jpg"
-                  alt="Debugging"
-                  className="additional-logo"
-                />
+                <LogoContainer src="Debugging.jpg" alt="Debugging" />
               </li>
               <li className="additional-item">
-                <img
-                  src="Deployment.png"
-                  alt="Deployment"
-                  className="additional-logo"
-                />
+                <LogoContainer src="Deployment.png" alt="Deployment" />
               </li>
               <li className="additional-item">
-                <img
-                  src="docker.png"
-                  alt="docker"
-                  className="additional-logo"
-                />
+                <LogoContainer src="docker.png" alt="docker" />
               </li>
               <li className="additional-item">
-                <img
-                  src="GitBash.png"
-                  alt="GitBash"
-                  className="additional-logo"
-                />
+                <LogoContainer src="GitBash.png" alt="GitBash" />
               </li>
               <li className="additional-item">
-                <img
-                  src="GitHub.png"
-                  alt="Github"
-                  className="additional-logo"
-                />
+                <LogoContainer src="GitHub.png" alt="Github" />
               </li>
               <li className="additional-item">
-                <img
-                  src="Heroku.png"
-                  alt="Heroku"
-                  className="additional-logo"
-                />
+                <LogoContainer src="Heroku.png" alt="Heroku" />
               </li>
               <li className="additional-item">
-                <img src="Jest.jpg" alt="Jest" className="additional-logo" />
+                <LogoContainer src="Jest.jpg" alt="Jest" />
               </li>
               <li className="additional-item">
-                <img
-                  src="Netlify.png"
-                  alt="Netlify"
-                  className="additional-logo"
-                />
+                <LogoContainer src="Netlify.png" alt="Netlify" />
               </li>
               <li className="additional-item">
-                <img
-                  src="Vercel.png"
-                  alt="Vercel"
-                  className="additional-logo"
-                />
+                <LogoContainer src="Vercel.png" alt="Vercel" />
               </li>
               <li className="additional-item">
-                <img
-                  src="VSCode.png"
-                  alt="VSCode"
-                  className="additional-logo"
-                />
+                <LogoContainer src="VSCode.png" alt="VSCode" />
               </li>
               <li className="additional-item">
-                <img src="YUP.webp" alt="YUP" className="additional-logo" />
+                <LogoContainer src="YUP.webp" alt="YUP" />
               </li>
             </ul>
             <h2 className="projects-heading">Projects</h2>

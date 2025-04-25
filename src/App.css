@@ -74,8 +74,8 @@ body {
 .backend-logo,
 .databases-logo,
 .additional-logo {
-  width: 90px;
-  height: auto;
+  /* width: 90px;  // Handled by Box */
+  /* height: auto; // Handled by Box */
   margin-right: 10px;
   vertical-align: middle;
   border: none;
